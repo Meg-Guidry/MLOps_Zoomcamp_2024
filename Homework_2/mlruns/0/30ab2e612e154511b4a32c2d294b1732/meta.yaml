@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/30ab2e612e154511b4a32c2d294b1732/artifacts
+end_time: 1716646053928
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30ab2e612e154511b4a32c2d294b1732
+run_name: fortunate-pug-328
+run_uuid: 30ab2e612e154511b4a32c2d294b1732
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716646047614
+status: 3
+tags: []
+user_id: meganguidry

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/435f0e7cef994f068664429b802b99c5/artifacts
+end_time: 1716645964047
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 435f0e7cef994f068664429b802b99c5
+run_name: intrigued-mare-352
+run_uuid: 435f0e7cef994f068664429b802b99c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716645963935
+status: 4
+tags: []
+user_id: meganguidry

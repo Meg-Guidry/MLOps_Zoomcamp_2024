@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/efb4fa60d0124508b84d13df8b964a7c/artifacts
+end_time: 1716693440597
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: efb4fa60d0124508b84d13df8b964a7c
+run_name: amusing-rat-836
+run_uuid: efb4fa60d0124508b84d13df8b964a7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716693434116
+status: 3
+tags: []
+user_id: meganguidry
