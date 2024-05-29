@@ -69,10 +69,23 @@ def run_register_model(data_path: str, top_n: int):
         train_and_log_model(data_path=data_path, params=run.data.params)
 
     # Select the model with the lowest test RMSE
+
+    # Tip 1: you can use the method search_runs from the MlflowClient to get the model with the lowest RMSE,
+
+    # Tip 2: to register the model you can use the method mlflow.register_model and you will need to pass the right model_uri in the form of a string that looks like this: "runs:/<RUN_ID>/model", and the name of the model (make sure to choose a good one!).
+    
     experiment = client.get_experiment_by_name(EXPERIMENT_NAME)
-    # best_run = client.search_runs( ...  )[0]
+    best_run = client.search_runs(
+        experiment_ids=experiment.experiment_id,
+        run_view_type=ViewType.ACTIVE_ONLY,
+        max_results=1,
+        order_by=["metrics.rmse ASC"])[0]
 
     # Register the best model
+    model_uri = f"runs:/{run.info.run_id}/artifacts"
+    mv = mlflow.register_model(
+        model_uri, 
+        "RandomForestRegressionModel_taxi_May24")
     # mlflow.register_model( ... )
 
 
