@@ -82,7 +82,7 @@ def run_register_model(data_path: str, top_n: int):
         order_by=["metrics.rmse ASC"])[0]
 
     # Register the best model
-    model_uri = f"runs:/{run.info.run_id}/artifacts"
+    model_uri = f"runs:/{run.info.run_id}/model"
     mv = mlflow.register_model(
         model_uri, 
         "RandomForestRegressionModel_taxi_May24")
